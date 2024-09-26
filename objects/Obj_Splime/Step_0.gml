@@ -15,11 +15,11 @@ if (Iframes > 0) {
 }
 if (hspeed < 0) {
 	image_xscale = -1;
-	
 }
 if (hspeed > 0) {
 	image_xscale = 1;
 }
-if (Climb == false) {
-	vspeed += 1
+ladder = false
+if (Climb == false and Descend == false and ladder == false) {
+	vspeed += .25
 }

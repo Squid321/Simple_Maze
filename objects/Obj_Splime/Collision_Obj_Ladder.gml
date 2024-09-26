@@ -1,3 +1,4 @@
+ladder = true;
 if Climb == true {
 	vspeed = -1
 }
@@ -7,3 +8,4 @@ else {
 if Descend == true {
 	vspeed = 1
 }
+ladder = false;
