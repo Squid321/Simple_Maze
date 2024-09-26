@@ -9,3 +9,5 @@ wallc = false;
 Descend = false;
 
 Coins = 0;
+
+Armor = 1;

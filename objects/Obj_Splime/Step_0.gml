@@ -10,3 +10,6 @@ if (hspeed == 0) {
 if (Akey == false and Dkey == false){
 	hspeed = 0
 }
+if (Armor <= 1){
+	Armor += .001
+}
