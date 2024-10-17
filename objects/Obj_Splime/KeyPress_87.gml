@@ -1,1 +1,3 @@
-Climb = true;
+if (ladder > 0) {
+	Climb = true;
+}

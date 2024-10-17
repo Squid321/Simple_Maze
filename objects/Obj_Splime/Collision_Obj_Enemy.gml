@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (Iframes <= 0) {
-	Armor -= 1
-	Iframes = 1
+if (global.Iframes <= 0) {
+	global.Armor -= 1
+	global.Iframes = 1
 }
-if (Armor < 0) {
+if (global.Armor < 0) {
 	room_restart()
 }
 

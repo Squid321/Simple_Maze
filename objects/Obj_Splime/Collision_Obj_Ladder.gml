@@ -1,4 +1,4 @@
-ladder = true;
+ladder = .2
 if Climb == true {
 	vspeed = -1
 }
@@ -8,4 +8,4 @@ else {
 if Descend == true {
 	vspeed = 1
 }
-ladder = false;
+fall_delay = 1

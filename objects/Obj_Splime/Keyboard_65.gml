@@ -1,3 +1,5 @@
-hspeed = -1
-image_speed=2
-Akey = true
+if (Can_Move == true) {
+	hspeed = -2;
+	image_speed=2;
+	Akey = true;
+}
