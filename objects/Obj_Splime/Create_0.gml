@@ -15,3 +15,7 @@ Can_Move = true;
 Move_Delay = 0;
 fall_delay = 0;
 attack = 0;
+yes = 0;
+no = 0;
+Wkey = false;
+stop_delay = 0

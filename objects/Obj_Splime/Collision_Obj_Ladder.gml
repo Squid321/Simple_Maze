@@ -9,3 +9,4 @@ if Descend == true {
 	vspeed = 1
 }
 fall_delay = 1
+no = 0

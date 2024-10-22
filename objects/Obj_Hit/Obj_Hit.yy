@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_Signal",
+  "name": "Obj_Hit",
   "spriteId": {
-    "name": "Spr_Signal",
-    "path": "sprites/Spr_Signal/Spr_Signal.yy",
+    "name": "Sprite27",
+    "path": "sprites/Sprite27/Sprite27.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,7 +27,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_Splime","path":"objects/Obj_Splime/Obj_Splime.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_Wall","path":"objects/Obj_Wall/Obj_Wall.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
