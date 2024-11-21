@@ -4,7 +4,7 @@ global.count = 0;
 global.stun = 0;
 global.posX = 0;
 global.posY = 0;
-
-
-
-
+global.dir = 0;
+global.Gen = 0;
+global.Rooms = 0;
+global.atkk = 0;

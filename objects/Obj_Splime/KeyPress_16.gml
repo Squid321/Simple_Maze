@@ -7,10 +7,12 @@ if (no == 0) {
 	vspeed = 0
 	if not (Akey == true and Dkey == true) {
 		if (Dkey == true) {
+			Dkey = false
 			hspeed = 4
 			yes = 1
 		}
 		if (Akey == true) {
+			Akey = false
 			hspeed = -4
 			yes = 1
 		}
@@ -32,6 +34,9 @@ if (no == 0) {
 		}
 	}
 }
+
+
+
 
 
 
