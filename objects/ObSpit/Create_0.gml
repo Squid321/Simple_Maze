@@ -7,6 +7,6 @@ if (Obj_Splime.x < x) {
 	hspeed = -3
 }
 vspeed = -1
-
+pow = 1
 
 

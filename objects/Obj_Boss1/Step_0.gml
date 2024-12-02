@@ -35,7 +35,16 @@ if (hspeed > 0) {
 	Direction = 1;
 }
 if (ready == 1) {
-	att = choose(1,2,3)
+	if (att == 4) {
+		fin -= 1
+		if (choose(1,2,3,4,5,6,7,8,9,10) == 10) {
+			att = 1
+		}
+	}
+	if not (att == 4) {
+		att = choose(1,2,3,4)
+	}
+	
 	ready = 0
 	if (att == 1) {
 		Delay = 12
@@ -46,6 +55,12 @@ if (ready == 1) {
 	if (att == 3) {
 		Delay = 16
 		instance_create_layer(x,y+4,layer,Obj_Signal)
+	}
+	if (att == 4) {
+		Delay = 1
+		fin = choose(12,13,14,15,16,17,18,19,20,21,22,23,24)
+		instance_create_layer(x,y,layer,ObBlueFireL)
+		instance_create_layer(x,y,layer,ObBlueFireR)
 	}
 }
 if (Delay > 3 and Delay < 4) {
@@ -76,6 +91,9 @@ if (Delay == 0) {
 		}
 		att_delay = 5
 	}	
+	if (att == 4) {
+		att_delay = .5
+	}
 	Delay = -1
 }
 vspeed += .25

@@ -65,6 +65,8 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"ObSpit","path":"objects/ObSpit/ObSpit.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":83,"eventType":5,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":81,"eventType":9,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Parent_Enemy","path":"objects/Parent_Enemy/Parent_Enemy.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"ObBlueFireL","path":"objects/ObBlueFireL/ObBlueFireL.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
