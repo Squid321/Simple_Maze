@@ -42,7 +42,7 @@ if (ready == 1) {
 		}
 	}
 	if not (att == 4) {
-		att = choose(1,2,3,4)
+		att = choose(1,2,3,4,5)
 	}
 	
 	ready = 0
@@ -61,6 +61,13 @@ if (ready == 1) {
 		fin = choose(12,13,14,15,16,17,18,19,20,21,22,23,24)
 		instance_create_layer(x,y,layer,ObBlueFireL)
 		instance_create_layer(x,y,layer,ObBlueFireR)
+	}
+	if (att == 5) {
+		Delay = 1
+		instance_create_layer(Obj_Splime.x+160,Obj_Splime.y+160,layer,ObOrbOfDeath)
+		instance_create_layer(Obj_Splime.x-160,Obj_Splime.y+160,layer,ObOrbOfDeath)
+		instance_create_layer(Obj_Splime.x-160,Obj_Splime.y-160,layer,ObOrbOfDeath)
+		instance_create_layer(Obj_Splime.x+160,Obj_Splime.y-160,layer,ObOrbOfDeath)
 	}
 }
 if (Delay > 3 and Delay < 4) {
