@@ -41,10 +41,15 @@ if (ready == 1) {
 			att = 1
 		}
 	}
-	if not (att == 4) {
-		att = choose(1,2,3,4,5)
+	if (att == 5) or (att == 6) {
+		att = -1
 	}
-	
+	if not (att == 4) {
+		att = choose(1,2,3,4,5,6)
+	}
+	if (att == -1) {
+		att = choose(1,2,3,5,5,5,6,6,6)
+	}
 	ready = 0
 	if (att == 1) {
 		Delay = 12
@@ -63,11 +68,18 @@ if (ready == 1) {
 		instance_create_layer(x,y,layer,ObBlueFireR)
 	}
 	if (att == 5) {
-		Delay = 1
+		Delay = 4
 		instance_create_layer(Obj_Splime.x+160,Obj_Splime.y+160,layer,ObOrbOfDeath)
 		instance_create_layer(Obj_Splime.x-160,Obj_Splime.y+160,layer,ObOrbOfDeath)
 		instance_create_layer(Obj_Splime.x-160,Obj_Splime.y-160,layer,ObOrbOfDeath)
 		instance_create_layer(Obj_Splime.x+160,Obj_Splime.y-160,layer,ObOrbOfDeath)
+	}
+	if (att == 6) {
+		Delay = 4
+		instance_create_layer(Obj_Splime.x+160,Obj_Splime.y,layer,ObOrbOfDeath)
+		instance_create_layer(Obj_Splime.x-160,Obj_Splime.y,layer,ObOrbOfDeath)
+		instance_create_layer(Obj_Splime.x,Obj_Splime.y-160,layer,ObOrbOfDeath)
+		instance_create_layer(Obj_Splime.x,Obj_Splime.y-160,layer,ObOrbOfDeath)
 	}
 }
 if (Delay > 3 and Delay < 4) {

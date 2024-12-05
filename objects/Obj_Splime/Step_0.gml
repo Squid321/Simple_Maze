@@ -28,7 +28,7 @@ if (Akey == false and Dkey == false) {
 	}
 }
 if (grip <= 0 and not place_meeting(x,y+vspeed,Obj_Wall) and not place_meeting(x,y+vspeed,Obj_Wall_Debug) and yes == 0) {
-	vspeed += .25
+			vspeed += .25
 }
 //Collision
 //Wall
@@ -129,5 +129,6 @@ if (attackk == 1 and Move_Delay <= .8) {
 }
 if (global.stun == 1) {
 	Move_Delay = 5;
+	Can_Move = false;
 	global.stun = 0
 }

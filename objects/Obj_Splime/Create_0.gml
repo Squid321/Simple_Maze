@@ -6,6 +6,7 @@ Descend = false;
 global.Coins = 0;
 global.Armor = 4;
 global.Iframes = 1;
+global.atkk = 0;
 Direction = 1;
 ladder = 0;
 grip = 0;
