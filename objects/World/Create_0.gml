@@ -8,3 +8,5 @@ global.dir = 0;
 global.Gen = 0;
 global.Rooms = 0;
 global.atkk = 0;
+can_start = 0
+global.rezize = 0

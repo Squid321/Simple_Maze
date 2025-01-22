@@ -7,8 +7,8 @@ if (hspeed == 0) {
 	image_speed = 0
 }
 	
-if (att_delay == 0) {
-	att_delay = 0
+if (att_delay <= 0 and att_delay >= -.1) {
+//	att_delay = 0
 	ready = 1
 }
 
@@ -34,22 +34,39 @@ if (hspeed > 0) {
 	image_speed = 1
 	Direction = 1;
 }
+if (firepause > 0) {
+	firepause -= .1
+}
 if (ready == 1) {
 	if (att == 4) {
 		fin -= 1
-		if (choose(1,2,3,4,5,6,7,8,9,10) == 10) {
-			att = 1
-		}
+//		if (choose(1,2,3,4,5,6,7,8,9,10) == 10) {
+//			att = 1
+//		}
 	}
 	if (att == 5) or (att == 6) {
 		att = -1
 	}
 	if not (att == 4) {
-		att = choose(1,2,3,4,5,6)
+		if not (att == -1) {
+			att = choose(1,2,3,4,5,6)
+		}
 	}
 	if (att == -1) {
 		att = choose(1,2,3,5,5,5,6,6,6)
 	}
+//	if (x < Obj_Splime.x-100) {
+//		att = 1
+//	}
+	if not (att == 4) {
+		firepause = -1
+	}
+	if (att == 4 and firepause == -1) {
+		firepause = 10
+		instance_create_layer(x,y,layer,ObFireTell)
+	}
+	
+	
 	ready = 0
 	if (att == 1) {
 		Delay = 12
@@ -61,11 +78,8 @@ if (ready == 1) {
 		Delay = 16
 		instance_create_layer(x,y+4,layer,Obj_Signal)
 	}
-	if (att == 4) {
+	if (att == 4 and firepause <= 0) {
 		Delay = 1
-		fin = choose(12,13,14,15,16,17,18,19,20,21,22,23,24)
-		instance_create_layer(x,y,layer,ObBlueFireL)
-		instance_create_layer(x,y,layer,ObBlueFireR)
 	}
 	if (att == 5) {
 		Delay = 4
@@ -111,7 +125,13 @@ if (Delay == 0) {
 		att_delay = 5
 	}	
 	if (att == 4) {
-		att_delay = .5
+//		fin = choose(12,13,14,15,16,17,18,19,20,21,22,23,24)
+		
+		if (choose(1,2,3,4,5,6,7,8,9,10) == 10) {
+			att = 1
+		}
+		att = 1
+		att_delay = 2
 	}
 	Delay = -1
 }
@@ -119,6 +139,16 @@ vspeed += .25
 if (HP <= 0) {
 	instance_destroy()
 }
-
-
+if (HP <= 50) {
+	ObDeathFluid.y -= .01
+	ObDeathFluid2.y -= .01
+}
+if (HP <= 25) {
+	ObDeathFluid.y -= .01
+	ObDeathFluid2.y -= .01
+}
+if (HP <= 10) {
+	ObDeathFluid.y -= .12
+	ObDeathFluid2.y -= .12
+}
 

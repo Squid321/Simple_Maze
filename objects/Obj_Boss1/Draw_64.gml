@@ -4,6 +4,6 @@ draw_text(10, 55, "att_delay (delay before attack is chosen) = " + string(att_de
 draw_text(10, 70, "Delay (Attack launches at 0)= " + string(Delay))
 draw_text(10, 85, "att# = " + string(att))
 draw_text(10, 100, "ready = " + string(ready))
-
+draw_text(10, 115, "FP = " + string(firepause))
 
 

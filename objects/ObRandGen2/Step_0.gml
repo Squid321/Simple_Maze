@@ -14,6 +14,7 @@ if (global.Gen == 1 and vspeed < 0.2 and hspeed < 0.2) {
 
 if (global.Gen == 1 and vspeed == 0 and hspeed == 0) {
 	global.Gen = 0
+	
 	instance_create_layer(x,y,layer,ObRandGen3)
 }
 

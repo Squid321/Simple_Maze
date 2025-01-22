@@ -9,6 +9,12 @@ if	(global.Rooms == 3) {
 	instance_destroy(Obj_WallB)
 	global.Rooms = 0
 }
+if (global.rezize > 1) {
+	global.rezize -= .1
+}
+
+
+	
 
 
 

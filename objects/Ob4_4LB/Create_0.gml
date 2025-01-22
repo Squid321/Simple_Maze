@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-ran = choose(1)
-if (ran = 1) {
+ran = choose(1,2)
+if (ran == 1) {
 	instance_create_layer(x,y,layer,Obj_Wall)
 	instance_create_layer(x+24,y,layer,Obj_Wall)
 	instance_create_layer(x+48,y,layer,Obj_Wall)
@@ -10,6 +10,16 @@ if (ran = 1) {
 	instance_create_layer(x+72,y+48,layer,Obj_Wall)
 	instance_create_layer(x+72,y+72,layer,Obj_Wall)
 	instance_create_layer(x,y+72,layer,Obj_Wall)
+if (ran == 2) {
+	instance_create_layer(x,y,layer,Obj_Wall)
+	instance_create_layer(x+24,y,layer,Obj_Wall)
+	instance_create_layer(x+48,y,layer,Obj_Wall)
+	instance_create_layer(x+72,y,layer,Obj_Wall)
+	instance_create_layer(x+72,y+24,layer,Obj_Wall)
+	instance_create_layer(x+72,y+48,layer,Obj_Wall)
+	instance_create_layer(x+72,y+72,layer,Obj_Wall)
+	instance_create_layer(x,y+72,layer,Obj_Wall)
+}
 }
 
 
