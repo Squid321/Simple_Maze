@@ -1,12 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"ObFruit",
+  "%Name":"ObLeaf",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Obj_Wall","path":"objects/Obj_Wall/Obj_Wall.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ObFruit",
+  "name":"ObLeaf",
   "overriddenProperties":[],
   "parent":{
     "name":"Labyranthine Maze",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite44",
-    "path":"sprites/Sprite44/Sprite44.yy",
+    "name":"Sprite47",
+    "path":"sprites/Sprite47/Sprite47.yy",
   },
   "spriteMaskId":null,
   "visible":true,

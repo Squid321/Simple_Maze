@@ -10,3 +10,5 @@ global.Rooms = 0;
 global.atkk = 0;
 can_start = 0
 global.rezize = 0
+global.temp = 0
+global.from = 0

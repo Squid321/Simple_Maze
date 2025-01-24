@@ -1,22 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Object_Boss2",
+  "%Name":"ObVine",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Object_Boss2",
+  "name":"ObVine",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Labyranthine Maze",
+    "path":"Labyranthine Maze.yyp",
   },
-  "parentObjectId":{
-    "name":"Parent_Boss",
-    "path":"objects/Parent_Boss/Parent_Boss.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,9 +32,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite43",
-    "path":"sprites/Sprite43/Sprite43.yy",
+    "name":"SpVine",
+    "path":"sprites/SpVine/SpVine.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
