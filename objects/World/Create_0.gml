@@ -12,3 +12,4 @@ can_start = 0
 global.rezize = 0
 global.temp = 0
 global.from = 0
+global.segments = 0

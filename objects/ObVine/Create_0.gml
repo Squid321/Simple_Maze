@@ -6,7 +6,7 @@ switch(aim) {
 		image_angle = 0
 	break;
 	case(2):
-		image_angle = 90
+		image_angle = 270
 	break;
 	case(3):
 		image_angle = 90

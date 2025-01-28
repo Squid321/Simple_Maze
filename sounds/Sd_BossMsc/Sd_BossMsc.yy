@@ -12,8 +12,8 @@
   "duration":48.0,
   "name":"Sd_BossMsc",
   "parent":{
-    "name":"Labyranthine Maze",
-    "path":"Labyranthine Maze.yyp",
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
