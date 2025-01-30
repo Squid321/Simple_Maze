@@ -8,8 +8,8 @@
   "name":"ObText",
   "overriddenProperties":[],
   "parent":{
-    "name":"Labyranthine Maze",
-    "path":"Labyranthine Maze.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

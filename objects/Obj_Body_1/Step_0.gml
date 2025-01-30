@@ -1,20 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (Obj_Head.x > x) {
-	hspeed += .1
-}
-if (Obj_Head.x < x) {
-	hspeed -= .1
-}
-if (Obj_Head.y > y) {
-	vspeed += .1
-}
-if (Obj_Head.y < y) {
-	vspeed -= .1
-}
-if (abs(hspeed) > 4) {
-	hspeed = sign(hspeed) * 4
-}
-if (abs(vspeed) > 4) {
-	vspeed = sign(vspeed) * 4
-}
+hspeed =  (Obj_Head.x - x)/3
+vspeed =  (Obj_Head.y - y)/3
+image_angle = direction + 90
